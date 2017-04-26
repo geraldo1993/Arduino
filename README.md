@@ -94,12 +94,12 @@ In the Arduino DIYER contact with this time, found that some friends on the Ardu
 
 ### Operator:
 
-- =
-- +
-- -
-- *
-- /
-- %
+-  =
+-  +
+-  -
+-  *
+-  /
+-  %
 - [==](https://www.arduino.cc/en/Reference/If)
 - [=!](https://www.arduino.cc/en/Reference/If)
 - [<=](https://www.arduino.cc/en/Reference/If)

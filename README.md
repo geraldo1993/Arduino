@@ -72,6 +72,40 @@ In the Arduino DIYER contact with this time, found that some friends on the Ardu
 
 /************* Basic C language *************/
 
-Keywords:
+### Keywords:
 
 - [if](https://www.arduino.cc/en/Reference/If)
+- [if else](https://www.arduino.cc/en/Reference/Else)
+- [for](https://www.arduino.cc/en/Reference/For)
+- [switch case](https://www.arduino.cc/en/Reference/SwitchCase)
+- [while](https://www.arduino.cc/en/Reference/While)
+- [do while](https://www.arduino.cc/en/Reference/DoWhile)
+- [break](https://www.arduino.cc/en/Reference/Break)
+- [continue](https://www.arduino.cc/en/Reference/Continue)
+- [return](https://www.arduino.cc/en/Reference/Return)
+- [go to](https://www.arduino.cc/en/Reference/Goto)
+
+### Syntax symbol:
+
+- [{}](https://www.arduino.cc/en/Reference/Braces)
+- [//](https://www.arduino.cc/en/Reference/Comments)
+- [/* */](https://www.arduino.cc/en/Reference/Comments)
+
+
+### Operator:
+
+- =
+- +
+- -
+- *
+- /
+- %
+- [==](https://www.arduino.cc/en/Reference/If)
+- [=!](https://www.arduino.cc/en/Reference/If)
+- [<=](https://www.arduino.cc/en/Reference/If)
+- [=>](https://www.arduino.cc/en/Reference/If)
+- [&&](https://www.arduino.cc/en/Reference/Boolean)
+- [||](https://www.arduino.cc/en/Reference/Boolean)
+- [!](https://www.arduino.cc/en/Reference/Boolean)
+- [++](https://www.arduino.cc/en/Reference/Increment)
+- [--](https://www.arduino.cc/en/Reference/Increment)

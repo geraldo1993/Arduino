@@ -6,7 +6,7 @@ Second, the working principle
 The built-in receiver tube converts the optical signal emitted from the infrared emission tube into a weak electrical signal. This signal is amplified by the IC internal amplifier, and then passed through the automatic gain control, band-pass filtering, demodulation, waveform shaping and reduced to the remote control Out of the original code, through the receiver of the signal output pin input to the electrical code on the identification circuit.
 Third, the infrared receiver header and wiring
 
-<img src="img/infa.png"
+<img src="img/infa.png">
 
 The infrared receiver has three pins as shown below:
 VOUT connected to the analog port, GND connected to the test board on the GND, VCC received on the test board +5 v.
@@ -30,23 +30,23 @@ NEC protocol description: Features: (1) 8-bit address, 8-bit command bit
 ·Logic 0 and 1 are defined as shown below
 The agreement is as follows：
 
-<img src="img/infa2.png"
+<img src="img/infa2.png">
 
 
 Press the button to immediately release the release of the pulse:
 
-<img src="img/infa1.png"
+<img src="img/infa1.png">
 
 The picture above shows a typical pulse sequence for NEC's protocol. Note: This first sends the LSB (least significant) protocol. The address of the above pulse transfer is 0x59 for 0x16. A message is started by a 9ms high level, followed by a low level of 4.5ms, (the two sections are composed of lead code) and then by the address code and the command code. Address and command transmission twice. The second all bits are negated and can be used to confirm the use of the received message. The total transfer time is constant because each point is repeated with its negated length. If you are not interested, you can ignore this reliability inversion, you can also expand the address and order to every 16 bits!
 Press the button for a while to release the firing pulse:
 
-<img src="img/infa3.png"
+<img src="img/infa3.png">
 
 
 A command is sent once, even if the button on the remote control is still pressed. When the key is pressed, the first 110ms pulse is the same as the previous figure, and then every 110ms of duplicate code is transmitted once. The repeat code is composed of a 9ms high pulse and a low level of 2.25ms and a high level of 560μs.
 Repeat pulse
 
-<img src="img/infa4.png"
+<img src="img/infa4.png">
 
 Note: After the pulse waveform into the integrated receiver, because the integrated receiver to be decoded, signal amplification and shaping, it should be noted that: no infrared signal, the output is high, there is a signal when the low Flat, so the output signal level and the opposite side of the launch. Receiver pulse can be seen through the oscilloscope, combined with the waveform to understand the program。
 

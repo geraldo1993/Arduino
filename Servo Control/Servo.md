@@ -4,21 +4,22 @@
 
 The steering gear is a position servo drive consisting essentially of a housing, a circuit board, a coreless motor, a gear and position detector. The working principle is to send a signal from the receiver or micro-controller to the steering gear, which has a reference circuit inside, resulting in a cycle of 20ms, width of 1.5ms reference signal, the DC bias voltage and the potentiometer voltage comparison, Voltage difference output. Through the IC on the circuit board to determine the direction of rotation, and then drive the coreless motor began to rotate, through the reduction gear power transmission to the swing arm, while the position detector to send back the signal to determine whether the positioning has been reached. For those who need to change the angle and can maintain the control system. When the motor speed is constant, through the cascade reduction gear drive potentiometer rotation, making the voltage difference is 0, the motor stops rotating. The angle range of the general steering gear rotation is 0 degrees to 180 degrees.
 
-< img src=IMG/servo.png >
+<img src="IMG/servo.png">
 
 There are many specifications of the steering gear, but all the steering gear has an external three lines, respectively, with brown, red, orange three colors to distinguish, because the steering gear brand is different, the color will be different, brown for the ground wire, red Power supply positive line, orange for the signal line.
-< img src= "/IMG/schema.png">
+
+<img src= "/IMG/schema.png">
 
 The angle of rotation of the steering gear is achieved by adjusting the duty cycle of the PWM (Pulse Width Modulation) signal. The period of the standard PWM (Pulse Width Modulation) signal is fixed at 20 ms (50 Hz), and the theoretical pulse width distribution should be in the range of 1 ms 2ms, but in fact the pulse width can be between 0.5ms and 2.5ms, pulse width and steering gear angle 0 ° ~ 180 ° corresponds. There is little room to note, because the steering gear brand is different, for the same signal, different brands of steering wheel rotation angle will be different.
 
-< img src="/IMG/schema1.png">
+<img src="/IMG/schema1.png">
 
 After understanding the basics we can learn to control a steering gear, and the components required by this experiment rarely need a steering gear, a jumper can be a bar.
 RB-412 Actuator * 1
 Breadboard jumper * 1 bar
 There are two ways to control the steering gear with Arduino. One is to generate a different square wave with a duty cycle by Arduino's common digital sensor interface. The PWM signal is used to simulate the steering gear. The second is the direct use of Arduino's own Servo Function of the steering gear control, the advantages of this control method is programmed, the disadvantage is only control 2-way steering gear, because Arduino own function can only use the number 9,10 interface. Arduino's drive capability is limited, so an external power supply is required when more than one steering gear needs to be controlled.
 
-<img src= "/IMG/schema2.png">
+<img src="/IMG/schema2.png">
 
 Method One: See Code
 Method Two

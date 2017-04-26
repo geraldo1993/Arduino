@@ -1,6 +1,9 @@
-Example 19 Infrared remote control
+# Example 19 Infrared remote control
+
 1.Introduction to infrared receiver
+
 What is an infrared receiver header?
+
 Infrared remote control signal is a series of binary pulse code. In order to make it in the wireless transmission process from other infrared signal interference, usually first of its modulation in a specific carrier frequency, and then by the infrared emission diode to launch out, and the infrared receiver will filter out other clutter , Only to receive the specific frequency of the signal and restore it into a binary pulse code, that is, demodulation.
 Second, the working principle
 The built-in receiver tube converts the optical signal emitted from the infrared emission tube into a weak electrical signal. This signal is amplified by the IC internal amplifier, and then passed through the automatic gain control, band-pass filtering, demodulation, waveform shaping and reduced to the remote control Out of the original code, through the receiver of the signal output pin input to the electrical code on the identification circuit.

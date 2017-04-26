@@ -1,7 +1,7 @@
 # Arduino
 ## Arduino study notes
 
-### Arduino study notes 1 - what is arduino?
+### Arduino study notes  - what is arduino?
 
 To understand arduino first to understand what is the microcontroller, arduino platform is the basis of AVR instruction set of single-chip.
 
@@ -71,6 +71,7 @@ Arduino language is built on the basis of C / C + +, in fact, is the basis of th
 In the Arduino DIYER contact with this time, found that some friends on the Arduino language is still relatively difficult to start, then here I simply comment on the Arduino language (I also half a pot of water, wrong place also please correct me).
 
 /************* Basic C language *************/
+
 Keywords:
 
-- [id]: https://www.arduino.cc/en/Reference/If  "If"
+- [if]: https://www.arduino.cc/en/Reference/If  "If"

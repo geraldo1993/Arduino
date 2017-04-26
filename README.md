@@ -74,4 +74,4 @@ In the Arduino DIYER contact with this time, found that some friends on the Ardu
 
 Keywords:
 
-- [if]: https://www.arduino.cc/en/Reference/If  "If"
+-  [ ] [if](https://www.arduino.cc/en/Reference/If)
